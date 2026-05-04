@@ -2,14 +2,11 @@
 
 ## About this repository
 
-This project is a **documentation-first** reference for **React + AI** features: how to structure apps so secrets stay on the server, how to stream and cancel responses, and what to verify before production. You can publish this `README.md` as the main guide for a sample app repo or keep it standalone alongside your implementation.
+This project is a **documentation-first** reference for **React + AI** features: how to structure apps so secrets stay on the server, how to stream and cancel responses, and what to verify before production.
 
 ---
 
-A practical guide for building **React** frontends that talk to **LLM providers** safely: streaming responses, cancellation, observability, and a production checklist. Use this as documentation for your own repo or as a reference when wiring OpenAI, Anthropic, Google, or other APIs behind a **server** you control.
-
-> **Educational.** Replace placeholders with your provider’s official SDK, add tests, and validate security and compliance for your domain. Always verify current API surfaces and pricing in provider docs.
-
+A practical guide for building **React** frontends that talk to **LLM providers** safely: streaming responses, cancellation, observability, and a production checklist.
 ---
 
 ## Table of contents
