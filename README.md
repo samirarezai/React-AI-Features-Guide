@@ -57,7 +57,7 @@ The React app sends **user messages** (and optional session IDs) to **your** end
 Below is a **pattern** only: swap `fetch` to the provider’s SDK and the exact URL/body headers they require.
 
 ```js
-// server/chat.js — example shape, not tied to a specific provider
+// server/chat.js: example shape, not tied to a specific provider
 import express from "express";
 
 const app = express();
@@ -330,7 +330,7 @@ When users **navigate away** or hit **Stop**, abort the client fetch and propaga
 
 - [ ] **API keys only on server** (env vars, secret manager; never `NEXT_PUBLIC_*` for provider keys)  
 - [ ] **Rate limits** + basic abuse controls (per IP / per user / per org)  
-- [ ] **Streaming** works through your **CDN / reverse proxy** (no surprise buffering) — e.g. nginx `proxy_buffering off;` (and often `proxy_cache off;`, `gzip off;` for that `location`) on the route that streams chat; verify **chunked** end-to-end with a real client  
+- [ ] **Streaming** works through your **CDN / reverse proxy** (no surprise buffering), e.g. nginx `proxy_buffering off;` (and often `proxy_cache off;`, `gzip off;` for that `location`) on the route that streams chat; verify **chunked** end-to-end with a real client  
 - [ ] **Client cancel** aborts upstream generation **where supported** (disconnect handlers, provider cancel APIs)  
 - [ ] **Fallback UI** when provider is down (cached copy, graceful message, retry)  
 - [ ] **Redacted logging** policy for prompts/responses  
@@ -349,7 +349,7 @@ location /api/chat {
 }
 ```
 
-Tune paths and upstream names for your stack; **Cloudflare** and other CDNs have their own streaming/buffering knobs—test with a slow token stream.
+Tune paths and upstream names for your stack; **Cloudflare** and other CDNs have their own streaming/buffering knobs, so test with a slow token stream.
 
 ---
 
@@ -358,5 +358,5 @@ Further reading
 - [MDN: Server-sent events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events)  
 - [Fetch: consuming a streaming response](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#processing_a_text_file_line_by_line)  
 - [Vercel AI SDK](https://sdk.vercel.ai/docs) (if using Next.js / Vercel ecosystem)  
-- Provider docs: **OpenAI** / **Anthropic** / **Google** — always verify current API surfaces and pricing  
+- Provider docs: **OpenAI** / **Anthropic** / **Google**; always verify current API surfaces and pricing  
 
