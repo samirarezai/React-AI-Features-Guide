@@ -353,19 +353,10 @@ Tune paths and upstream names for your stack; **Cloudflare** and other CDNs have
 
 ---
 
-## 11. Further reading
+Further reading
 
 - [MDN: Server-sent events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events)  
 - [Fetch: consuming a streaming response](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch#processing_a_text_file_line_by_line)  
 - [Vercel AI SDK](https://sdk.vercel.ai/docs) (if using Next.js / Vercel ecosystem)  
 - Provider docs: **OpenAI** / **Anthropic** / **Google** — always verify current API surfaces and pricing  
 
----
-
-## 12. License and credit
-
-You may publish this file in your GitHub repository under **your chosen license**. If you adapt it, a short credit or link back is appreciated but not required.
-
----
-
-*This guide is educational. Swap placeholder streaming with your provider’s official SDK, add tests, and validate security and compliance for your domain.*
