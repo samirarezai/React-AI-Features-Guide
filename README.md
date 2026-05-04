@@ -21,8 +21,6 @@ A practical guide for building **React** frontends that talk to **LLM providers*
 8. [Model routing (cheap vs capable)](#8-model-routing-cheap-vs-capable)
 9. [Cost control and observability](#9-cost-control-and-observability)
 10. [Production checklist](#10-production-checklist)
-11. [Further reading](#11-further-reading)
-12. [License and credit](#12-license-and-credit)
 
 ---
 
