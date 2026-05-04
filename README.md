@@ -7,6 +7,7 @@ This project is a **documentation-first** reference for **React + AI** features:
 ---
 
 A practical guide for building **React** frontends that talk to **LLM providers** safely: streaming responses, cancellation, observability, and a production checklist.
+
 ---
 
 ## Table of contents
